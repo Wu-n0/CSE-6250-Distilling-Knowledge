@@ -6,7 +6,7 @@ This project builds on the work from **"Distilling Knowledge from Publicly Avail
 The original authors introduced **DistCare**, a model designed to transfer knowledge from **publicly available EMR data to emerging epidemics** where patient data is limited. Our goal was to **reproduce the results from the paper, evaluate its robustness, and test our own models based on similar ideas**.
 
 This is the original work that we built upon:  
-**Paper:** ["Distilling Knowledge from Publicly Available Online EMR Data to Emerging Epidemic for Prognosis"](https://dl.acm.org/doi/10.1145/3442381.3449935)  
+**Paper:** ["Distilling Knowledge from Publicly Available Online EMR Data to Emerging Epidemic for Prognosis"](https://dl.acm.org/doi/10.1145/3442381.3449855)  
 **Original GitHub Repository:** [DistCare](https://github.com/ArthurLeoM/DistCare)  
 
 ---
@@ -59,7 +59,7 @@ We took the original **DistCare model**, reproduced its results, and conducted a
 | **Reproduced DistCare** | 305.86 | 16.44 |
 | **Original DistCare (Paper Results)** | 198.93 | 9.75 |
 | **GRU Transfer Model** | 218.86 | 6.67 |
-| **MLP Model** | **152.24** | **6.44** |
+| **MLP Model** | 152.24 | 6.44 |
 
 **Note:** Our results for the DistCare model were worse than what was reported in the paper. This could be because we **did not have access to the exact preprocessing steps used in the original work**. Additionally, since the **Tongji dataset is relatively small**, simpler models like **MLP** may perform just as well (or even better) than complex architectures.  
 
